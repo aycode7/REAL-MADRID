@@ -1,18 +1,22 @@
 'use client'
 import React from 'react'
+import { useState } from 'react'
 import './page.css'
 import Image from 'next/image'
 import logo2 from './Image/madrid-logo-black.jpeg'
-import stadium from './Image/champions.webp'
-import players from './Image/saka-control.jpg'
-import { useState } from 'react'
 
-const HomeSectionOne = () => {
+const page = () => {
 
   const [click, setClick] = useState(true)
   const [click2, setClick2] = useState(false)
   const [click3, setClick3] = useState(false)
   const [click4, setClick4] = useState(false)
+
+  const [tap, setTap] = useState(false)
+
+  const handleTap = () => {
+    setTap(!tap)
+  }
 
   const handleClick = () => {
     setClick(true)
@@ -40,51 +44,63 @@ const HomeSectionOne = () => {
     setClick2(false)
     setClick3(false)
     setClick4(true)
+    
   }
-  
+
   return (
     <div>
-      <div className='top'>
+        <div className='top'>
         <div className="navbar">
 
           <div className="left">
-            <h2>Arsenal</h2>
+            <h2>Madridsta</h2>
             <Image width={50} height={40} className='img' src={logo2} alt='' />
           </div>
 
           <div className="middle">
-              <span onClick={handleClick}>
-              <p className={click === true ? ('tap') : ''}>News</p>
+              <span className='paragraph' onClick={handleClick}>
+
+              <a href="">
+                <p className={click === true ? ('tap') : ''}>News</p>
+              </a>
+
               </span>
 
-              <span onClick={handleClick2}>
+              <span className='paragraph' onClick={handleClick2}>
               <p className={click2 === true ? ('tap') : ''}>Fixtures</p>
               </span>
 
-              <span onClick={handleClick3}>
+              <span className='paragraph' onClick={handleClick3}>
               <p className={click3 === true ? ('tap') : ''}>Standings</p>
               </span>
 
-              <span onClick={handleClick4}>
-              <p className={click4 === true ? ('tap') : ''}>Players</p>
+              <span className='paragraph' onClick={handleClick4}>
+                <a href="players">
+                  <p className={click4 === true ? ('tap') : ''}>Players</p>
+                </a>
               </span>
           </div>
 
+          <div className='drop-1'>
+            <div className='icon'>
+              <p onClick={handleTap}>▼</p>
+            </div>
+
+            {tap === true &&
+              <div className='dropdown'>
+                <p>News</p>
+                <p>Fixtures</p>
+                <p>Stadings</p>
+                <p>players</p>
+              </div>
+            }
+          </div>
+
         </div>
-      </div>
-
-      <div>
-        <Image className='players' src={stadium} alt='' />
-      </div>
-
-      <div>
-        <div>
-          <Image src={stadium} />
         </div>
-      </div>
-
+      
     </div>
   )
 }
 
-export default HomeSectionOne
+export default page
