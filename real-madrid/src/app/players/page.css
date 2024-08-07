@@ -4,15 +4,51 @@
 
 }
 
+.stadium
+{
+    width: 100%;
+    margin-top: -80px;
+    height: 1950px;
+
+}
+
+.ctn
+{
+    margin-top: -1680px;
+    height: 703px;
+    border-radius: 10px;
+
+}
+
+.img
+{
+    cursor: pointer;
+
+}
+
+.moveTop p
+{
+    padding: 10px;
+    margin-top: -1480px;
+    position: fixed;
+    font-size: 25px;
+    background-color: black;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 170px;
+
+}
+
 .navbar
 {
-    background-color: rgb(0, 0, 0);    
+    background-color: rgba(0, 0, 0, 0.897);      
     color: white;
     display: flex;
     padding: 15px;
+    position: absolute;
     border: none;
     align-items: center;
-    position: fixed;
     width: 90%;
     border-radius: 10px;
 
@@ -74,9 +110,207 @@ h2
 
 }
 
+h3
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+
+}
+
 .tap
 {
     border-bottom: 2px solid white;
+    display: flex;
+
     width: fit-content;
     
+}
+
+.head-1
+{
+    width: 740px;
+    border-bottom: 2px solid white;
+}
+
+.madrid-head
+{
+    display: flex;
+    background-color: black;
+    padding: 15px 10px;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    align-items: center;
+
+}
+
+.madrid-head h2
+{
+    color: white;
+
+}
+
+.name
+{
+    width: 350px;
+    font-size: 18px;
+
+}
+
+.position
+{
+    width: 140px;
+    font-size: 18px;
+
+}
+
+.age
+{
+    width: 90px;
+    font-size: 18px;
+
+}
+
+.height
+{
+    width: 70px;
+    font-size: 18px;
+
+}
+
+.weight
+{
+    width: 90px;
+    font-size: 18px;
+
+}
+
+.data-head
+{
+    background-color: black;
+    width: 740px;
+    color: white;
+    padding: 15px;
+    display: flex;
+
+}
+
+.one
+{
+    width: 740px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 15px 15px;
+    align-items: center;
+
+}
+
+.player-name
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 350px;
+
+}
+
+.player-data
+{
+    border-top: 2px solid white;
+
+}
+
+.play
+{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.7s;
+    
+}
+
+.play:hover
+{
+    transform: scale(1.1);
+    transition: all 0.7s ease;
+}
+
+.play-pst
+{
+    width: 140px;
+
+}
+
+.play-age
+{
+    width: 90px;
+
+}
+
+.play-height
+{
+    width: 70px;
+
+}
+
+.play-width
+{
+    width: 90px;
+
+}
+
+.flex
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-ctn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+
+}
+
+.btn
+{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 13px 20px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s;
+    align-items: center;
+    width: 140px;
+    cursor: pointer;
+
+}
+
+.btn:hover
+{
+    background-color: white;
+    transition: all 0.8s ease;
+    color: black;
+    border: 2px solid black;
+    transform: scale(0.98);
+
+}
+
+.btn:active
+{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+
 }

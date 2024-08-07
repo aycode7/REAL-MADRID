@@ -1,0 +1,248 @@
+.top
+{
+    padding: 40px 5%;
+
+}
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.897);     
+    color: white;
+    display: flex;
+    padding: 15px;
+    border: none;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px)
+{
+    .paragraph
+    {
+        display: none;
+
+    }
+
+    .icon-1
+    {
+        color: white;
+    }
+
+    .text
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    h1
+    {
+        font-size: 23px;
+
+    }
+
+    h3
+    {
+        font-size: 16px;
+        font-weight: light;
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px)
+{
+
+    .text
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    h1
+    {
+        font-size: 26px;
+
+    }
+
+    h3
+    {
+        font-size: 17px;
+
+    }
+
+
+}
+
+.icon
+{
+    margin-left: -40px;
+    color: black;
+
+}
+
+.left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.middle
+{
+    display: flex;
+    gap: 25px;
+    margin: auto;
+
+}
+
+p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    padding-bottom: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+h3
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+h1
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 35px;
+
+}
+
+.tap
+{
+    border-bottom: 2px solid white;
+    width: fit-content;
+    
+}
+
+.dropdown
+{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: -75px;
+    margin-top: 5px;
+    position: absolute;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.dropdown p{
+    font-weight: bold;
+
+}
+
+.stadium
+{
+    width: 100%;
+    margin-top: -90px;
+    height: 660px;
+
+}
+
+.navbar .left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .middle
+{
+    display: flex;
+    gap: 25px;
+    margin: auto;
+
+}
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.moveTop p
+{
+    padding: 7px 5px;
+    margin-top: -150px;
+    position: fixed;
+    font-size: 23px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    margin-left: 65px;
+
+}
+
+.moveTop p:hover + .pc
+{
+    display: block;
+
+}
+
+.pc
+{
+    display: none;
+
+}
+
+.pc p
+{
+    background-color: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid black;
+    margin-left: 130px;
+    font-size: 12px;
+    padding: 3px;
+
+}

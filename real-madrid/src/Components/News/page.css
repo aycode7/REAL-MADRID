@@ -6,7 +6,7 @@
 
 .navbar
 {
-    background-color: rgb(0, 0, 0);    
+    background-color: rgba(0, 0, 0, 0.897);   
     color: white;
     display: flex;
     padding: 15px;
@@ -31,14 +31,58 @@
         color: white;
     }
 
+    .drop-1
+    {
+        display: none;
 
+    }
+
+    .one
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px)
+{
+    .one
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px)
+{
+    .one{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+    }
+}
+
+.drop-1
+{
+    display: block;
 
 }
 
 .icon
 {
     margin-left: -40px;
-    color: black;
+    color: white;
 
 }
 
@@ -107,7 +151,7 @@ h2
 {
     width: 100%;
     margin-top: -120px;
-    height: 550px;
+    height: 590px;
 }
 
 .navbar .left
@@ -137,7 +181,7 @@ h2
 {
     padding: 5px 5%;
     display: flex;
-    gap: 120px;
+    gap: 40px;
     margin-top: 20px;
 
 }
@@ -152,24 +196,26 @@ h2
 
 .one .left2 h3
 {
-    padding: 27px;
+    padding: 20px 20px;
+    font-size: 20px;
     box-shadow: 0.5px 0.5px 5px black;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 545px;
+    width: 585px;
     font-weight: bold;
     margin-top: -5px;
     border: none;
     border-radius: 0  0 10px 10px;
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
-
 
 .one .champions
 {
-    width: 545px;
+    width: 585px;
     height: 300px;
     border: none;
     position: initial;
@@ -179,49 +225,45 @@ h2
 
 }
 
-.two
+.moveTop p
 {
-    padding: 5px 5%;
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-
-}
-
-.two .left2
-{
+    padding: 7px 5px;
+    margin-top: -200px;
+    position: fixed;
+    font-size: 23px;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-
-}
-
-.two .left2 h3
-{
-    padding: 30px;
-    font-size: 22px;
-    box-shadow: 0.5px 0.5px 5px black;
-    cursor: pointer;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 585px;
-    font-weight: bold;
-    margin-top: -5px;
-    border: none;
-    border-radius: 0  0 10px 10px;
-    display: flex;
     text-align: center;
-
-}
-
-
-.two .champions
-{
-    width: 585px;
-    height: 300px;
+    align-items: center;
+    justify-content: center;
     border: none;
-    position: initial;
-    border-radius: 10px 10px 0 0;
-    cursor: pointer;
-    box-shadow: 0.5px 0.5px 5px black;
+    border-radius: 5px;
+    margin-left: 65px;
 
 }
+
+.moveTop p:hover + .pc
+{
+    display: block;
+
+}
+
+.pc
+{
+    display: none;
+
+}
+
+.pc p
+{
+    background-color: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid black;
+    margin-left: 130px;
+    font-size: 12px;
+    padding: 3px;
+
+}
+
